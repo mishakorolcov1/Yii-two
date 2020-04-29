@@ -1,0 +1,16 @@
+
+#    RewriteCond %{REQUEST_URI} ^/.*
+#    RewriteRule ^(.*)$ web/$1 [L]
+#
+#    RewriteCond %{REQUEST_URI} !^/web/
+#    RewriteCond %{REQUEST_FILENAME} !-f [OR]
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteRule ^.*$ web/index.php
+
+
+#    SELECT u.*, SUM(b.amount) as userSum
+#    FROM users as u
+#    left join billing as b on b.userId = u.id
+#    where b.id is not null
+#    group by u.id
+#    order by userSum DESC
